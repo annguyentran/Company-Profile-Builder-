@@ -1,0 +1,23 @@
+{
+  "name": "company-profile-builder-",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/annguyentran/Company-Profile-Builder-.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annguyentran/Company-Profile-Builder-/issues"
+  },
+  "homepage": "https://github.com/annguyentran/Company-Profile-Builder-#readme",
+  "dependencies": {
+    "inquirer": "^8.2.4",
+    "jest": "^28.1.3"
+  }
+}
