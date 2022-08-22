@@ -1,4 +1,6 @@
-const inquirer = require("inquirer")
+const inquirer = require("inquirer");
+const Engineer = require("./LIB/Engineer");
+const Intern = require("./LIB/Intern");
 const Manager = require("./LIB/Manager")
 
 function mainMenu() {
@@ -54,7 +56,8 @@ function askManager() {
 
         }
 
-    ]).then(result => {const manager = new Manager(result.name, result.id, result.email, result.officenumber)
+    ]).then(result => {const manager = new Manager
+        (result.name, result.id, result.email, result.officenumber)
     console.log(manager)
     })
 
@@ -70,7 +73,7 @@ function askEngineer() {
         },
         {
             type: "input",
-            name: "ID",
+            name: "id",
             message: "What the ID of the employee?"
 
         },
@@ -89,7 +92,10 @@ function askEngineer() {
 
         }
 
-    ])
+    ]).then(result => {const engineer = new Engineer
+        (result.name, result.id, result.email, result.gitHub)
+    console.log(engineer)
+    })
 
 }
 
@@ -103,7 +109,7 @@ function askIntern() {
         },
         {
             type: "input",
-            name: "ID",
+            name: "id",
             message: "What the ID of the employee?"
 
         },
@@ -122,10 +128,10 @@ function askIntern() {
 
         }
 
-    ])
+    ]).then(result => {const intern = new Intern
+        (result.name, result.id, result.email, result.school)
+    console.log(intern)
+    })
 
 }
-
-
-
 mainMenu()
