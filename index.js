@@ -32,9 +32,12 @@ function mainMenu() {
                 <!DOCTYPE html>
                 <html lang="en">
                 <head>
-                <title></title>
+                <title>Team Profile</title>
                 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+                <link rel="stylesheet" href="./dist/style.css">
                 </head>
+
+                <header id="title">My Team</header>
                 <body>
                 <div class="row">
                 `

@@ -25,7 +25,7 @@ class Employee {
         <h1>${this.getRole()}</h1>
         Name: ${this.getName()}</br>
         ID: ${this.getId()}</br>
-        Email: <a href="${this.getEmail()}">${this.getEmail()}</a></br>
+        Email: <a href="mailto: ${this.getEmail()}">${this.getEmail()}</a></br>
         `
     }
 
